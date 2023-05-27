@@ -407,6 +407,76 @@ footer ul{
     left: 700px;
 }
 
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area1 area1 area3 area4"
+    ;
+    border: 2px solid red;
+    gap: 15px;
+    padding: 15px;
+    justify-items: center;
+}
+
+.grilla__hijo {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #CC9544;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #eeee;
+
+    border: 1px solid green;
+
+}
+
+.grilla__hijo img {
+
+    width: auto;
+    height: 100%;
+
+}
+
+.g1 {
+    grid-area: area1;
+}
+
+.g2 {
+    grid-area: area2;
+}
+
+.g3 {
+    grid-area: area3;
+}
+
+.g4 {
+    grid-area: area4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries*/  /*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
 @media only screen and (max-width: 592px){
     
