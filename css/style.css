@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+
+h1 {
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -------------------------HEADER------------------------- */    
+/* MENU NAVEGADOR */
+/*Utilizacion de flex*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: white;
+    padding: 0px;
+    width: 100%;
+    height: 52px;
+    border-bottom: solid 1px black;
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo{
+    width: 30px;
+    height: auto;
+    border-radius: 100%;
+    border-bottom-style: none;
+
+}
+.menu-navegador{
+    display: flex;
+    padding-top: 7px;
+    justify-content: center;
+}
+
+.menu-navegador ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu-navegador ul li{
+    display: inline-block;
+    padding: 7px;
+    padding-left: 25px;
+}
+
+.menu-navegador ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /*mayusculas*/
+
+
+}
+
+.imagenes-header{
+    display: flex;
+    margin-left: auto;
+}
+
+.imagenes-header img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 100%;
+
+
+}
+/* -------------------------/HEADER------------------------- */    
+/*--------------------------BODY----------------------------*/
+.fondo img{
+    width: 100%;
+}
+
+.lanzamientos, .ofertas{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+/*--------PSEUDOCLASES---------------------------------*/
+
+.imagenes-lanzamiento .bodyimagenes img{
+    transition: 0.3s;
+}
+
+.imagenes-lanzamiento .bodyimagenes img:hover{
+    transform: scale(1.1);
+}
+
+.secciones .bodysecciones img{
+    transition: 0.3s;
+}
+
+.secciones .bodysecciones:hover img{
+    filter: blur(3px);
+}
+
+.redes .imagenesylogos img{
+    transition: filter 0.3s;
+}
+
+.redes .imagenesylogos:hover img{
+    filter: blur(3px);
+}
+
+.extras .extras2 img{
+    transition: 0.3s;
+}
+
+.extras .extras2 img:hover{
+    filter: blur(3px);
+}
+
+/*----------------------------------------------------*/
+
+
+.imagenes-lanzamiento{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*auto-fit ya me hace todos los grids responsive*/
+    gap: 20px;
+}
+
+.bodyimagenes{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.bodyimagenes img{
+    max-width: 100%;
+}
+
+.bodyimagenes h2, .bodyimagenes p{
+    margin-top: 17px;
+    padding: 2px;
+}
+
+.bodyimagenes h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bodyimagenes p{
+    font-family: 'Konkhmer Sleokchher';
+    font-size: x-large;
+}
+
+.secciones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.bodysecciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*margin: 29px;*/
+    position: relative;
+}
+
+.bodysecciones img{
+    width: 400px;
+    height: auto;
+}
+
+.bodysecciones p{
+    position: absolute;
+    bottom: 50%;
+    left: 35%;
+    /*transform: translate(-50%, -50%);*/
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.buzito{
+    clip-path: inset(32px 0 30px 0);
+}
+
+.tachado{
+    text-decoration: line-through;
+    color: rgb(240, 72, 72);
+}
+
+.extras {
+    padding: 10px 15px;
+    margin: 0px;
+    padding-left: 16px;
+}
+
+.extras2{
+    display: inline-block;
+    text-align: center;
+    margin: 38px;
+}
+
+.extras2 img{
+    width: 852px;
+    height: 100%;
+}
+
+.extras2 h2{
+    position: relative;
+    bottom: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    color: white;
+    
+}
+
+/*esta seccion "suscricpion" me costo muchisimo, no pude armarla en display inline block, por ende recurri a la mala tecnica del position relative y jugar con los top,left,bottom,etc*/
+.suscripcion{
+    background-color: black;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+
+.info{
+    position: relative;
+    left: 500px;
+    bottom: 400px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.info h2{
+
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+.info p{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.logo img{
+    width: 500px;
+}
+
+.email, .boton{
+    position: relative;
+    left: 500px;
+    bottom: 350px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+input[type="email"] {
+    width: 300px;
+}
+
+/*------------------------------------------------------------------------*/
+
+.redes {
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.imagenesylogos {
+    display: inline-block;
+    text-align: center;
+    margin: 29px;
+}
+
+.imagenesylogos img {
+    width: 400px;
+    height: auto;
+}
+
+.iconos {
+    display: inline-block;
+
+}
+.iconos img{
+    width: 150px;
+    height: auto;
+    position: relative;
+    bottom: 460px;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.imagenesylogos p{
+    position: relative;
+    bottom: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.footer div{
+    display: inline-block;
+    align-items: top;
+    list-style: none;
+    padding-left: 15%;
+}
+
+footer ul{
+
+    list-style: none;
+}
+
+.ubi {
+    padding-top: 15px;
+}
+
+.menu ul {
+    position: relative;
+    bottom: 65px;
+}
+
+.contacto ul{
+
+    position: relative;
+    bottom: 90px;
+}
+
+.footer ul li h2{
+    font-family: 'Teko', sans-serif;
+}
+
+.footer ul li {
+    font-family: sans-serif;
+}
+
+
+
+/*--------formato para buzos-------*/
+
+.formatobuzos {
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.buzosdiv {
+    display: inline-block;
+    margin: 29px;
+}
+
+.buzosdiv img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buzosdiv h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.buzosdiv p{
+    font-family: 'Konkhmer Sleokchher';
+    font-size: x-large;
+    display: inline;
+}
+
+.buzosdiv h2, .buzosdiv p, .Textoprecompra h2, .Textoprecompra p{
+    padding: 2px;
+}
+
+.Textoprecompra h2{
+        font-family: 'Roboto', sans-serif;
+}
+
+.Textoprecompra p{
+    font-family: 'Konkhmer Sleokchher';
+    font-size: x-large;
+    display: inline;
+}
+
+.Textoprecompra p, .Textoprecompra h2{
+    position: relative;
+    bottom: 650px;
+    left: 700px;
+}
+
+.botoncomprar {
+    position: relative;
+    bottom: 600px;
+    left: 700px;
+}
+
+/* Media queries*/  /*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+@media only screen and (max-width: 592px){
+    
+    .header {
+        width: 100%;
+        height: 104px;
+    }
+}
+
+@media only screen and (max-width: 389px){
+    
+    .header {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 336px){
+    
+    .header {
+        width: 100%;
+        height: 190px;
+    }
+}
+
+
