@@ -316,13 +316,6 @@ input[type="email"] {
     color: white;
 }
 
-.footer div{
-    display: inline-block;
-    align-items: top;
-    list-style: none;
-    padding-left: 15%;
-}
-
 footer ul{
 
     list-style: none;
