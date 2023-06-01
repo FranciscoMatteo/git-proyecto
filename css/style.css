@@ -132,6 +132,19 @@ a{
     transform: scale(1.1);
 }
 
+
+
+
+
+
+.grilla2 .grilla__hijo2 img{
+    transition: 0.3s;
+}
+
+.grilla2 .grilla__hijo2 img:hover{
+    transform: scale(1.1);
+}
+
 /*----------------------------------------------------*/
 
 
@@ -499,3 +512,61 @@ footer ul{
 }
 */
 
+
+.grilla2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "area1 area1 area2 area3"
+    "area1 area1 area4 area5"
+    ;
+    gap: 15px;
+    padding: 15px;
+    justify-items: center;
+}
+
+.grilla__hijo2 {
+
+    overflow: hidden;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #eeee;
+
+    border: 1px solid grey;
+
+}
+
+.grilla__hijo2 img {
+    width: 100%;
+    height: auto;
+}
+
+.ga {
+    grid-area: area1;
+}
+
+.gb {
+    grid-area: area2;
+}
+
+.gc {
+    grid-area: area3;
+}
+
+.gd {
+    grid-area: area4;
+}
+
+.ge {
+    grid-area: area5;
+}
