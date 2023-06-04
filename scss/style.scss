@@ -1,21 +1,21 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
 
 h1 {
     color: red;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-/* -------------------------HEADER------------------------- */
+/* -------------------------HEADER------------------------- */    
 /* MENU NAVEGADOR */
 /*Utilizacion de flex*/
-* {
+
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -30,155 +30,163 @@ a {
     z-index: 9999;
 }
 
-.logo {
+.logo{
     width: 30px;
     height: auto;
     border-radius: 100%;
     border-bottom-style: none;
-}
 
-.menu-navegador {
+}
+.menu-navegador{
     display: flex;
     padding-top: 7px;
     justify-content: center;
 }
 
-.menu-navegador ul {
+.menu-navegador ul{
     list-style-type: none;
     font-size: 20px;
 }
 
-.menu-navegador ul li {
+.menu-navegador ul li{
     display: inline-block;
     padding: 7px;
     padding-left: 25px;
 }
 
-.menu-navegador ul li a {
+.menu-navegador ul li a{
     text-decoration: none;
     color: black;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    /*mayusculas*/
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /*mayusculas*/
+
+
 }
 
-.imagenes-header {
+.imagenes-header{
     display: flex;
     margin-left: auto;
 }
 
-.imagenes-header img {
+.imagenes-header img{
     width: 30px;
     height: 30px;
     padding: 2px;
     border-radius: 100%;
-}
 
-/* -------------------------/HEADER------------------------- */
+
+}
+/* -------------------------/HEADER------------------------- */    
 /*--------------------------BODY----------------------------*/
-.fondo img {
+.fondo img{
     width: 100%;
 }
 
-.lanzamientos,
-.ofertas {
+.lanzamientos, .ofertas{
     text-align: center;
-    font-family: "Teko", sans-serif;
+    font-family: 'Teko', sans-serif;
     padding: 20px;
     text-transform: uppercase;
     padding-top: 50px;
 }
 
 /*--------PSEUDOCLASES---------------------------------*/
-.imagenes-lanzamiento .bodyimagenes img {
+
+.imagenes-lanzamiento .bodyimagenes img{
     transition: 0.3s;
 }
 
-.imagenes-lanzamiento .bodyimagenes img:hover {
+.imagenes-lanzamiento .bodyimagenes img:hover{
     transform: scale(1.1);
 }
 
-.secciones .bodysecciones img {
+.secciones .bodysecciones img{
     transition: 0.3s;
 }
 
-.secciones .bodysecciones:hover img {
+.secciones .bodysecciones:hover img{
     filter: blur(3px);
 }
 
-.redes .imagenesylogos img {
+.redes .imagenesylogos img{
     transition: filter 0.3s;
 }
 
-.redes .imagenesylogos:hover img {
+.redes .imagenesylogos:hover img{
     filter: blur(3px);
 }
 
-.extras .extras2 img {
+.extras .extras2 img{
     transition: 0.3s;
 }
 
-.extras .extras2 img:hover {
+.extras .extras2 img:hover{
     filter: blur(3px);
 }
 
-.card-container1 .card img {
+.card-container1 .card img{
     transition: 0.3s;
 }
 
-.card-container1 .card img:hover {
+.card-container1 .card img:hover{
     transform: scale(1.1);
 }
 
-.grilla2 .grilla__hijo2 img {
+
+
+
+
+
+.grilla2 .grilla__hijo2 img{
     transition: 0.3s;
 }
 
-.grilla2 .grilla__hijo2 img:hover {
+.grilla2 .grilla__hijo2 img:hover{
     transform: scale(1.1);
 }
 
 /*----------------------------------------------------*/
-.imagenes-lanzamiento {
+
+
+.imagenes-lanzamiento{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /*auto-fit ya me hace todos los grids responsive*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*auto-fit ya me hace todos los grids responsive*/
     gap: 20px;
 }
 
-.bodyimagenes {
+.bodyimagenes{
     display: grid;
     grid-template-rows: auto 1fr auto;
     text-align: center;
     padding: 20px;
 }
 
-.bodyimagenes img {
+.bodyimagenes img{
     max-width: 100%;
 }
 
-.bodyimagenes h2,
-.bodyimagenes p {
+.bodyimagenes h2, .bodyimagenes p{
     margin-top: 17px;
     padding: 2px;
 }
 
-.bodyimagenes h2 {
-    font-family: "Roboto", sans-serif;
+.bodyimagenes h2{
+    font-family: 'Roboto', sans-serif;
 }
 
-.bodyimagenes p {
-    font-family: "Konkhmer Sleokchher";
+.bodyimagenes p{
+    font-family: 'Konkhmer Sleokchher';
     font-size: x-large;
 }
 
-.secciones {
+.secciones{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.bodysecciones {
+
+.bodysecciones{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,61 +196,63 @@ a {
     position: relative;
 }
 
-.bodysecciones img {
+.bodysecciones img{
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
-.bodysecciones p {
+.bodysecciones p{
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "Teko", sans-serif;
+    font-family: 'Teko', sans-serif;
     font-size: 40px;
     color: white;
 }
 
-.buzito {
+.buzito{
     clip-path: inset(32px 0 30px 0);
 }
 
-.tachado {
+.tachado{
     text-decoration: line-through;
     color: rgb(240, 72, 72);
 }
 
 .extras {
-    display: flex;
+    display:flex;
     justify-content: center;
     padding: 10px 15px;
     margin: 0px;
     padding-left: 16px;
 }
 
-.extras2 {
+.extras2{
     display: inline-block;
     text-align: center;
     margin: 38px;
 }
 
-.extras2 img {
+.extras2 img{
     width: 100%;
     height: 100%;
 }
 
-.extras2 h2 {
+.extras2 h2{
     position: relative;
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Teko", sans-serif;
+    font-family: 'Teko', sans-serif;
     font-size: 40px;
     color: white;
+    
 }
 
 /*------------------------------------------------------------------------*/
+
 .redes {
     padding: 10px 15px;
     margin: 10px;
@@ -261,9 +271,9 @@ a {
 
 .iconos {
     display: inline-block;
-}
 
-.iconos img {
+}
+.iconos img{
     width: 150px;
     height: auto;
     position: relative;
@@ -272,17 +282,18 @@ a {
     padding-left: 200px;
 }
 
-.imagenesylogos p {
+.imagenesylogos p{
     position: relative;
     bottom: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Teko", sans-serif;
+    font-family: 'Teko', sans-serif;
     font-size: 50px;
     color: white;
 }
 
-footer ul {
+footer ul{
+
     list-style: none;
 }
 
@@ -295,20 +306,24 @@ footer ul {
     bottom: 65px;
 }
 
-.contacto ul {
+.contacto ul{
+
     position: relative;
     bottom: 90px;
 }
 
-.footer ul li h2 {
-    font-family: "Teko", sans-serif;
+.footer ul li h2{
+    font-family: 'Teko', sans-serif;
 }
 
 .footer ul li {
     font-family: sans-serif;
 }
 
+
+
 /*--------formato para buzos-------*/
+
 .formatobuzos {
     padding: 10px 15px;
     margin: 10px;
@@ -325,35 +340,31 @@ footer ul {
     object-fit: cover;
 }
 
-.buzosdiv h2 {
-    font-family: "Roboto", sans-serif;
+.buzosdiv h2{
+    font-family: 'Roboto', sans-serif;
 }
 
-.buzosdiv p {
-    font-family: "Konkhmer Sleokchher";
+.buzosdiv p{
+    font-family: 'Konkhmer Sleokchher';
     font-size: x-large;
     display: inline;
 }
 
-.buzosdiv h2,
-.buzosdiv p,
-.Textoprecompra h2,
-.Textoprecompra p {
+.buzosdiv h2, .buzosdiv p, .Textoprecompra h2, .Textoprecompra p{
     padding: 2px;
 }
 
-.Textoprecompra h2 {
-    font-family: "Roboto", sans-serif;
+.Textoprecompra h2{
+        font-family: 'Roboto', sans-serif;
 }
 
-.Textoprecompra p {
-    font-family: "Konkhmer Sleokchher";
+.Textoprecompra p{
+    font-family: 'Konkhmer Sleokchher';
     font-size: x-large;
     display: inline;
 }
 
-.Textoprecompra p,
-.Textoprecompra h2 {
+.Textoprecompra p, .Textoprecompra h2{
     position: relative;
     bottom: 650px;
     left: 700px;
@@ -365,11 +376,15 @@ footer ul {
     left: 700px;
 }
 
-.grilla {
+
+.grilla{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 500px);
-    grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area4";
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area1 area1 area3 area4"
+    ;
     border: 2px solid red;
     gap: 15px;
     padding: 15px;
@@ -377,18 +392,29 @@ footer ul {
 }
 
 .grilla__hijo {
+
     overflow: hidden;
+
     width: 100%;
+
     height: 100%;
+
     background-color: #CC9544;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    color: rgba(238, 238, 238, 0.9333333333);
+
+    color: #eeee;
+
     border: 1px solid green;
+
 }
 
 .grilla__hijo img {
+
     width: 100%;
     height: auto;
 }
@@ -409,23 +435,38 @@ footer ul {
     grid-area: area4;
 }
 
-/* Media queries*/
-/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
-@media only screen and (max-width: 592px) {
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries*/  /*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+@media only screen and (max-width: 592px){
+    
     .header {
         width: 100%;
         height: 104px;
     }
 }
 
-@media only screen and (max-width: 389px) {
+@media only screen and (max-width: 389px){
+    
     .header {
         width: 100%;
         height: 150px;
     }
 }
 
-@media only screen and (max-width: 336px) {
+
+@media only screen and (max-width: 336px){
+    
     .header {
         width: 100%;
         height: 190px;
@@ -453,14 +494,17 @@ footer ul {
 
 @media (max-width: 600px) {
     .card {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
     }
 }
 
 .bodyimagenes {
     padding-top: 3%;
 }
+
+
+
 
 /*
 #carouselExample{
@@ -469,25 +513,39 @@ footer ul {
     margin: auto;
 }
 */
-.grilla2 {
+
+
+.grilla2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
+    grid-template-areas: 
+    "area1 area1 area2 area3"
+    "area1 area1 area4 area5"
+    ;
     gap: 15px;
     padding: 15px;
     justify-items: center;
 }
 
 .grilla__hijo2 {
+
     overflow: hidden;
+
     width: 100%;
+
     height: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    color: rgba(238, 238, 238, 0.9333333333);
+
+    color: #eeee;
+
     border: 1px solid grey;
+
 }
 
 .grilla__hijo2 img {
@@ -514,5 +572,3 @@ footer ul {
 .ge {
     grid-area: area5;
 }
-
-/*# sourceMappingURL=style.css.map */
