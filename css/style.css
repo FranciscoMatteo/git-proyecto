@@ -3,463 +3,449 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
-
 h1 {
-    color: red;
+  color: red;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* -------------------------HEADER------------------------- */
 /* MENU NAVEGADOR */
 /*Utilizacion de flex*/
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 .header {
-    background-color: white;
-    padding: 0px;
-    width: 100%;
-    height: 52px;
-    border-bottom: solid 1px black;
-    position: fixed;
-    z-index: 9999;
+  background-color: white;
+  padding: 0px;
+  width: 100%;
+  height: 52px;
+  border-bottom: solid 1px black;
+  position: fixed;
+  z-index: 9999;
 }
 
 .logo {
-    width: 30px;
-    height: auto;
-    border-radius: 100%;
-    border-bottom-style: none;
+  width: 30px;
+  height: auto;
+  border-radius: 100%;
+  border-bottom-style: none;
 }
 
 .menu-navegador {
-    display: flex;
-    padding-top: 7px;
-    justify-content: center;
+  display: flex;
+  padding-top: 7px;
+  justify-content: center;
 }
 
 .menu-navegador ul {
-    list-style-type: none;
-    font-size: 20px;
+  list-style-type: none;
+  font-size: 20px;
 }
 
 .menu-navegador ul li {
-    display: inline-block;
-    padding: 7px;
-    padding-left: 25px;
+  display: inline-block;
+  padding: 7px;
+  padding-left: 25px;
 }
 
 .menu-navegador ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    /*mayusculas*/
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase; /*mayusculas*/
 }
 
 .imagenes-header {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
 .imagenes-header img {
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 100%;
 }
 
 /* -------------------------/HEADER------------------------- */
 /*--------------------------BODY----------------------------*/
 .fondo img {
-    width: 100%;
+  width: 100%;
 }
 
-.lanzamientos,
-.ofertas {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    padding: 20px;
-    text-transform: uppercase;
-    padding-top: 50px;
+.lanzamientos, .ofertas {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  padding: 20px;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
 /*--------PSEUDOCLASES---------------------------------*/
 .imagenes-lanzamiento .bodyimagenes img {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .imagenes-lanzamiento .bodyimagenes img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .secciones .bodysecciones img {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .secciones .bodysecciones:hover img {
-    filter: blur(3px);
+  filter: blur(3px);
 }
 
 .redes .imagenesylogos img {
-    transition: filter 0.3s;
+  transition: filter 0.3s;
 }
 
 .redes .imagenesylogos:hover img {
-    filter: blur(3px);
+  filter: blur(3px);
 }
 
 .extras .extras2 img {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .extras .extras2 img:hover {
-    filter: blur(3px);
+  filter: blur(3px);
 }
 
 .card-container1 .card img {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card-container1 .card img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .grilla2 .grilla__hijo2 img {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .grilla2 .grilla__hijo2 img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*----------------------------------------------------*/
 .imagenes-lanzamiento {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /*auto-fit ya me hace todos los grids responsive*/
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*auto-fit ya me hace todos los grids responsive*/
+  gap: 20px;
 }
 
 .bodyimagenes {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    text-align: center;
-    padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  padding: 20px;
 }
 
 .bodyimagenes img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.bodyimagenes h2,
-.bodyimagenes p {
-    margin-top: 17px;
-    padding: 2px;
+.bodyimagenes h2, .bodyimagenes p {
+  margin-top: 17px;
+  padding: 2px;
 }
 
 .bodyimagenes h2 {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bodyimagenes p {
-    font-family: "Konkhmer Sleokchher";
-    font-size: x-large;
+  font-family: "Konkhmer Sleokchher";
+  font-size: x-large;
 }
 
 .secciones {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .bodysecciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /*margin: 29px;*/
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*margin: 29px;*/
+  position: relative;
 }
 
 .bodysecciones img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .bodysecciones p {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Teko", sans-serif;
-    font-size: 40px;
-    color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
 }
 
 .buzito {
-    clip-path: inset(32px 0 30px 0);
+  clip-path: inset(32px 0 30px 0);
 }
 
 .tachado {
-    text-decoration: line-through;
-    color: rgb(240, 72, 72);
+  text-decoration: line-through;
+  color: rgb(240, 72, 72);
 }
 
 .extras {
-    display: flex;
-    justify-content: center;
-    padding: 10px 15px;
-    margin: 0px;
-    padding-left: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  margin: 0px;
+  padding-left: 16px;
 }
 
 .extras2 {
-    display: inline-block;
-    text-align: center;
-    margin: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
 }
 
 .extras2 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .extras2 h2 {
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Teko", sans-serif;
-    font-size: 40px;
-    color: white;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
 }
 
 /*------------------------------------------------------------------------*/
 .redes {
-    padding: 10px 15px;
-    margin: 10px;
+  padding: 10px 15px;
+  margin: 10px;
 }
 
 .imagenesylogos {
-    display: inline-block;
-    text-align: center;
-    margin: 29px;
+  display: inline-block;
+  text-align: center;
+  margin: 29px;
 }
 
 .imagenesylogos img {
-    width: 400px;
-    height: auto;
+  width: 400px;
+  height: auto;
 }
 
 .iconos {
-    display: inline-block;
+  display: inline-block;
 }
 
 .iconos img {
-    width: 150px;
-    height: auto;
-    position: relative;
-    bottom: 460px;
-    align-items: center;
-    padding-left: 200px;
+  width: 150px;
+  height: auto;
+  position: relative;
+  bottom: 460px;
+  align-items: center;
+  padding-left: 200px;
 }
 
 .imagenesylogos p {
-    position: relative;
-    bottom: 300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Teko", sans-serif;
-    font-size: 50px;
-    color: white;
+  position: relative;
+  bottom: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 50px;
+  color: white;
 }
 
 footer ul {
-    list-style: none;
+  list-style: none;
 }
 
 .ubi {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .menu ul {
-    position: relative;
-    bottom: 65px;
+  position: relative;
+  bottom: 65px;
 }
 
 .contacto ul {
-    position: relative;
-    bottom: 90px;
+  position: relative;
+  bottom: 90px;
 }
 
 .footer ul li h2 {
-    font-family: "Teko", sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .footer ul li {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 /*--------formato para buzos-------*/
 .formatobuzos {
-    padding: 10px 15px;
-    margin: 10px;
+  padding: 10px 15px;
+  margin: 10px;
 }
 
 .buzosdiv {
-    display: inline-block;
-    margin: 29px;
+  display: inline-block;
+  margin: 29px;
 }
 
 .buzosdiv img {
-    width: 500px;
-    height: 100%;
-    object-fit: cover;
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .buzosdiv h2 {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buzosdiv p {
-    font-family: "Konkhmer Sleokchher";
-    font-size: x-large;
-    display: inline;
+  font-family: "Konkhmer Sleokchher";
+  font-size: x-large;
+  display: inline;
 }
 
-.buzosdiv h2,
-.buzosdiv p,
-.Textoprecompra h2,
-.Textoprecompra p {
-    padding: 2px;
+.buzosdiv h2, .buzosdiv p, .Textoprecompra h2, .Textoprecompra p {
+  padding: 2px;
 }
 
 .Textoprecompra h2 {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Textoprecompra p {
-    font-family: "Konkhmer Sleokchher";
-    font-size: x-large;
-    display: inline;
+  font-family: "Konkhmer Sleokchher";
+  font-size: x-large;
+  display: inline;
 }
 
-.Textoprecompra p,
-.Textoprecompra h2 {
-    position: relative;
-    bottom: 650px;
-    left: 700px;
+.Textoprecompra p, .Textoprecompra h2 {
+  position: relative;
+  bottom: 650px;
+  left: 700px;
 }
 
 .botoncomprar {
-    position: relative;
-    bottom: 600px;
-    left: 700px;
+  position: relative;
+  bottom: 600px;
+  left: 700px;
 }
 
 .grilla {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 500px);
-    grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area4";
-    border: 2px solid red;
-    gap: 15px;
-    padding: 15px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area4";
+  border: 2px solid red;
+  gap: 15px;
+  padding: 15px;
+  justify-items: center;
 }
 
 .grilla__hijo {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background-color: #CC9544;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(238, 238, 238, 0.9333333333);
-    border: 1px solid green;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #CC9544;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(238, 238, 238, 0.9333333333);
+  border: 1px solid green;
 }
 
 .grilla__hijo img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .g1 {
-    grid-area: area1;
+  grid-area: area1;
 }
 
 .g2 {
-    grid-area: area2;
+  grid-area: area2;
 }
 
 .g3 {
-    grid-area: area3;
+  grid-area: area3;
 }
 
 .g4 {
-    grid-area: area4;
+  grid-area: area4;
 }
 
-/* Media queries*/
-/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+/* Media queries*/ /*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
 @media only screen and (max-width: 592px) {
-    .header {
-        width: 100%;
-        height: 104px;
-    }
+  .header {
+    width: 100%;
+    height: 104px;
+  }
 }
-
 @media only screen and (max-width: 389px) {
-    .header {
-        width: 100%;
-        height: 150px;
-    }
+  .header {
+    width: 100%;
+    height: 150px;
+  }
 }
-
 @media only screen and (max-width: 336px) {
-    .header {
-        width: 100%;
-        height: 190px;
-    }
+  .header {
+    width: 100%;
+    height: 190px;
+  }
 }
-
 .card-container1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    border-style: none;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-style: none;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
-    .card {
-        width: 100%;
-        height: auto;
-    }
+  .card {
+    width: 100%;
+    height: auto;
+  }
 }
-
 .bodyimagenes {
-    padding-top: 3%;
+  padding-top: 3%;
 }
 
 /*
@@ -470,49 +456,49 @@ footer ul {
 }
 */
 .grilla2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
-    gap: 15px;
-    padding: 15px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
+  gap: 15px;
+  padding: 15px;
+  justify-items: center;
 }
 
 .grilla__hijo2 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(238, 238, 238, 0.9333333333);
-    border: 1px solid grey;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(238, 238, 238, 0.9333333333);
+  border: 1px solid grey;
 }
 
 .grilla__hijo2 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .ga {
-    grid-area: area1;
+  grid-area: area1;
 }
 
 .gb {
-    grid-area: area2;
+  grid-area: area2;
 }
 
 .gc {
-    grid-area: area3;
+  grid-area: area3;
 }
 
 .gd {
-    grid-area: area4;
+  grid-area: area4;
 }
 
 .ge {
-    grid-area: area5;
+  grid-area: area5;
 }
 
 /*# sourceMappingURL=style.css.map */

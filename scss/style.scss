@@ -1,24 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
-
-h1 {
-    color: red;
-}
-
-a{
-    text-decoration: none;
-}
+// IMPORT RESETS //
+@import 'base/resets';
 
 /* -------------------------HEADER------------------------- */    
 /* MENU NAVEGADOR */
 /*Utilizacion de flex*/
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
 .header {
     background-color: white;
