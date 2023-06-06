@@ -4,6 +4,9 @@
 // IMPORT NAVBAR //
 @import 'components/navbar';
 
+//IMPORT FOOTER//
+@import "components/footer";
+
 // IMPORT INDEX //
 @import 'layout/index';
 
@@ -12,9 +15,6 @@
 
 //IMPORT ABOUT US //
 @import "layout/cuidados";
-
-//IMPORT FOOTER//
-@import "components/footer";
 
 //IMPORT MANTENIMIENTO//
 @import "layout/mantenimiento";

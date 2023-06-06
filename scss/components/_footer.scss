@@ -1,6 +1,13 @@
 footer ul {
-
     list-style: none;
+
+    li {
+        font-family: sans-serif;
+
+        h2 {
+            font-family: 'Teko', sans-serif;
+        }
+    }
 }
 
 .ubi {
@@ -16,12 +23,4 @@ footer ul {
 
     position: relative;
     bottom: 90px;
-}
-
-.footer ul li h2 {
-    font-family: 'Teko', sans-serif;
-}
-
-.footer ul li {
-    font-family: sans-serif;
 }

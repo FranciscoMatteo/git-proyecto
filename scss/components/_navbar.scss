@@ -20,37 +20,35 @@
     display: flex;
     padding-top: 7px;
     justify-content: center;
-}
 
-.menu-navegador ul {
-    list-style-type: none;
-    font-size: 20px;
-}
+    ul {
+        list-style-type: none;
+        font-size: 20px;
 
-.menu-navegador ul li {
-    display: inline-block;
-    padding: 7px;
-    padding-left: 25px;
-}
+        li {
+            display: inline-block;
+            padding: 7px;
+            padding-left: 25px;
 
-.menu-navegador ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    /*mayusculas*/
-
-
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;
+                /*mayusculas*/
+            }
+        }
+    }
 }
 
 .imagenes-header {
     display: flex;
     margin-left: auto;
-}
 
-.imagenes-header img {
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    border-radius: 100%;
+    img {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        border-radius: 100%;
+    }
 }

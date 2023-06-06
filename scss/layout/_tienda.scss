@@ -19,23 +19,22 @@
     grid-template-rows: auto 1fr auto;
     text-align: center;
     padding: 20px;
-}
 
-.bodyimagenes img {
-    max-width: 100%;
-}
+    img {
+        max-width: 100%;
+    }
 
-.bodyimagenes h2,
-.bodyimagenes p {
-    margin-top: 17px;
-    padding: 2px;
-}
+    p {
+        margin-top: 17px;
+        padding: 2px;
+        font-family: 'Konkhmer Sleokchher';
+        font-size: x-large;
+    }
+    
 
-.bodyimagenes h2 {
-    font-family: 'Roboto', sans-serif;
-}
-
-.bodyimagenes p {
-    font-family: 'Konkhmer Sleokchher';
-    font-size: x-large;
+    h2 {
+        margin-top: 17px;
+        padding: 2px;
+        font-family: 'Roboto', sans-serif;
+    }
 }
