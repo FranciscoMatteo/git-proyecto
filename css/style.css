@@ -16,9 +16,30 @@ a {
   padding: 0px;
 }
 
-/* -------------------------HEADER------------------------- */
-/* MENU NAVEGADOR */
-/*Utilizacion de flex*/
+.fondo img {
+  width: 100%;
+}
+
+/* Media queries*/
+/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+@media only screen and (max-width: 592px) {
+  .header {
+    width: 100%;
+    height: 104px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  .header {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 336px) {
+  .header {
+    width: 100%;
+    height: 190px;
+  }
+}
 .header {
   background-color: white;
   padding: 0px;
@@ -57,7 +78,8 @@ a {
   text-decoration: none;
   color: black;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase; /*mayusculas*/
+  text-transform: uppercase;
+  /*mayusculas*/
 }
 
 .imagenes-header {
@@ -72,13 +94,8 @@ a {
   border-radius: 100%;
 }
 
-/* -------------------------/HEADER------------------------- */
-/*--------------------------BODY----------------------------*/
-.fondo img {
-  width: 100%;
-}
-
-.lanzamientos, .ofertas {
+.lanzamientos,
+.ofertas {
   text-align: center;
   font-family: "Teko", sans-serif;
   padding: 20px;
@@ -86,59 +103,10 @@ a {
   padding-top: 50px;
 }
 
-/*--------PSEUDOCLASES---------------------------------*/
-.imagenes-lanzamiento .bodyimagenes img {
-  transition: 0.3s;
-}
-
-.imagenes-lanzamiento .bodyimagenes img:hover {
-  transform: scale(1.1);
-}
-
-.secciones .bodysecciones img {
-  transition: 0.3s;
-}
-
-.secciones .bodysecciones:hover img {
-  filter: blur(3px);
-}
-
-.redes .imagenesylogos img {
-  transition: filter 0.3s;
-}
-
-.redes .imagenesylogos:hover img {
-  filter: blur(3px);
-}
-
-.extras .extras2 img {
-  transition: 0.3s;
-}
-
-.extras .extras2 img:hover {
-  filter: blur(3px);
-}
-
-.card-container1 .card img {
-  transition: 0.3s;
-}
-
-.card-container1 .card img:hover {
-  transform: scale(1.1);
-}
-
-.grilla2 .grilla__hijo2 img {
-  transition: 0.3s;
-}
-
-.grilla2 .grilla__hijo2 img:hover {
-  transform: scale(1.1);
-}
-
-/*----------------------------------------------------*/
 .imagenes-lanzamiento {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*auto-fit ya me hace todos los grids responsive*/
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /*auto-fit ya me hace todos los grids responsive*/
   gap: 20px;
 }
 
@@ -153,7 +121,8 @@ a {
   max-width: 100%;
 }
 
-.bodyimagenes h2, .bodyimagenes p {
+.bodyimagenes h2,
+.bodyimagenes p {
   margin-top: 17px;
   padding: 2px;
 }
@@ -208,6 +177,35 @@ a {
   color: rgb(240, 72, 72);
 }
 
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-style: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+.bodyimagenes {
+  padding-top: 3%;
+}
+
 .extras {
   display: flex;
   justify-content: center;
@@ -216,146 +214,56 @@ a {
   padding-left: 16px;
 }
 
-.extras2 {
-  display: inline-block;
-  text-align: center;
-  margin: 38px;
+/*--------PSEUDOCLASES---------------------------------*/
+.imagenes-lanzamiento .bodyimagenes img {
+  transition: 0.3s;
 }
 
-.extras2 img {
-  width: 100%;
-  height: 100%;
+.imagenes-lanzamiento .bodyimagenes img:hover {
+  transform: scale(1.1);
 }
 
-.extras2 h2 {
-  position: relative;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Teko", sans-serif;
-  font-size: 40px;
-  color: white;
+.secciones .bodysecciones img {
+  transition: 0.3s;
 }
 
-/*------------------------------------------------------------------------*/
-.redes {
-  padding: 10px 15px;
-  margin: 10px;
+.secciones .bodysecciones:hover img {
+  filter: blur(3px);
 }
 
-.imagenesylogos {
-  display: inline-block;
-  text-align: center;
-  margin: 29px;
+.redes .imagenesylogos img {
+  transition: filter 0.3s;
 }
 
-.imagenesylogos img {
-  width: 400px;
-  height: auto;
+.redes .imagenesylogos:hover img {
+  filter: blur(3px);
 }
 
-.iconos {
-  display: inline-block;
+.extras .extras2 img {
+  transition: 0.3s;
 }
 
-.iconos img {
-  width: 150px;
-  height: auto;
-  position: relative;
-  bottom: 460px;
-  align-items: center;
-  padding-left: 200px;
+.extras .extras2 img:hover {
+  filter: blur(3px);
 }
 
-.imagenesylogos p {
-  position: relative;
-  bottom: 300px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Teko", sans-serif;
-  font-size: 50px;
-  color: white;
+.card-container1 .card img {
+  transition: 0.3s;
 }
 
-footer ul {
-  list-style: none;
+.card-container1 .card img:hover {
+  transform: scale(1.1);
 }
 
-.ubi {
-  padding-top: 15px;
+.grilla2 .grilla__hijo2 img {
+  transition: 0.3s;
 }
 
-.menu ul {
-  position: relative;
-  bottom: 65px;
+.grilla2 .grilla__hijo2 img:hover {
+  transform: scale(1.1);
 }
 
-.contacto ul {
-  position: relative;
-  bottom: 90px;
-}
-
-.footer ul li h2 {
-  font-family: "Teko", sans-serif;
-}
-
-.footer ul li {
-  font-family: sans-serif;
-}
-
-/*--------formato para buzos-------*/
-.formatobuzos {
-  padding: 10px 15px;
-  margin: 10px;
-}
-
-.buzosdiv {
-  display: inline-block;
-  margin: 29px;
-}
-
-.buzosdiv img {
-  width: 500px;
-  height: 100%;
-  object-fit: cover;
-}
-
-.buzosdiv h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-.buzosdiv p {
-  font-family: "Konkhmer Sleokchher";
-  font-size: x-large;
-  display: inline;
-}
-
-.buzosdiv h2, .buzosdiv p, .Textoprecompra h2, .Textoprecompra p {
-  padding: 2px;
-}
-
-.Textoprecompra h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-.Textoprecompra p {
-  font-family: "Konkhmer Sleokchher";
-  font-size: x-large;
-  display: inline;
-}
-
-.Textoprecompra p, .Textoprecompra h2 {
-  position: relative;
-  bottom: 650px;
-  left: 700px;
-}
-
-.botoncomprar {
-  position: relative;
-  bottom: 600px;
-  left: 700px;
-}
-
+/*----------------------------------------------------*/
 .grilla {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -400,61 +308,74 @@ footer ul {
   grid-area: area4;
 }
 
-/* Media queries*/ /*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
-@media only screen and (max-width: 592px) {
-  .header {
-    width: 100%;
-    height: 104px;
-  }
-}
-@media only screen and (max-width: 389px) {
-  .header {
-    width: 100%;
-    height: 150px;
-  }
-}
-@media only screen and (max-width: 336px) {
-  .header {
-    width: 100%;
-    height: 190px;
-  }
-}
-.card-container1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.extras2 {
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
 }
 
-.card {
-  width: 200px;
-  height: auto;
-  margin: 10px;
-  border-style: none;
-}
-
-.card img {
+.extras2 img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: 100%;
-    height: auto;
-  }
-}
-.bodyimagenes {
-  padding-top: 3%;
+.extras2 h2 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
 }
 
-/*
-#carouselExample{
-    width: 400px;
-    height: 400px;
-    margin: auto;
+.extras2 {
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
 }
-*/
+
+.extras2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.extras2 h2 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.ubi {
+  padding-top: 15px;
+}
+
+.menu ul {
+  position: relative;
+  bottom: 65px;
+}
+
+.contacto ul {
+  position: relative;
+  bottom: 90px;
+}
+
+.footer ul li h2 {
+  font-family: "Teko", sans-serif;
+}
+
+.footer ul li {
+  font-family: sans-serif;
+}
+
 .grilla2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -500,5 +421,13 @@ footer ul {
 .ge {
   grid-area: area5;
 }
+
+/*
+#carouselExample{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
