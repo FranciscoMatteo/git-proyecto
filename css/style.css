@@ -16,6 +16,11 @@ a {
   padding: 0px;
 }
 
+.fondo {
+  background: url(https://plus.unsplash.com/premium_photo-1663054691902-a95656ce37ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  z-index: 9999;
+}
 .fondo img {
   width: 100%;
 }
