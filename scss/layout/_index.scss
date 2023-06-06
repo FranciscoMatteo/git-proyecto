@@ -102,14 +102,6 @@
     }
 }
 
-
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-        height: auto;
-    }
-}
-
 .bodyimagenes {
     padding-top: 3%;
 }
@@ -126,62 +118,47 @@
 /*--------PSEUDOCLASES---------------------------------*/
 
 .imagenes-lanzamiento .bodyimagenes img {
-    transition: 0.3s;
-}
-
-.imagenes-lanzamiento .bodyimagenes img:hover {
-    transform: scale(1.1);
+    transition: $transition;
+    &:hover {
+        transform: $minizoom;
+    }
 }
 
 .secciones .bodysecciones img {
-    transition: 0.3s;
-}
-
-.secciones .bodysecciones:hover img {
-    filter: blur(3px);
+    transition: $transition;
+    &:hover {
+        filter: $difuminado;
+    }
 }
 
 .redes .imagenesylogos img {
-    transition: filter 0.3s;
-}
-
-.redes .imagenesylogos:hover img {
-    filter: blur(3px);
+    transition: filter $transition;
+    &:hover img {
+        filter: $difuminado;
+    }
 }
 
 .extras .extras2 img {
-    transition: 0.3s;
-}
-
-.extras .extras2 img:hover {
-    filter: blur(3px);
+    transition: $transition;
+    &:hover {
+        filter: $difuminado;
+    }
 }
 
 .card-container1 .card img {
-    transition: 0.3s;
-}
-
-.card-container1 .card img:hover {
-    transform: scale(1.1);
+    transition: $transition;
+    &:hover {
+        transform: $minizoom;
+    }
 }
 
 .grilla2 .grilla__hijo2 img {
-    transition: 0.3s;
+    transition: $transition;
+    &:hover {
+        transform: $minizoom;
+    }
 }
-
-.grilla2 .grilla__hijo2 img:hover {
-    transform: scale(1.1);
-}
-
 /*----------------------------------------------------*/
-
-
-
-
-
-
-
-
 
 //GRILLA EJEMPLO//
 .grilla {

@@ -1,4 +1,5 @@
 // IMPORT RESETS //
+@import "base/variable";
 @import 'base/resets';
 
 // IMPORT NAVBAR //
@@ -7,17 +8,12 @@
 //IMPORT FOOTER//
 @import "components/footer";
 
-// IMPORT INDEX //
-@import 'layout/index';
-
-//IMPORT ABOUT US //
-@import "layout/nosotros";
-
-//IMPORT ABOUT US //
-@import "layout/cuidados";
-
-//IMPORT MANTENIMIENTO//
+//IMPORT LAYOUT //
 @import "layout/mantenimiento";
+@import 'layout/index';
+@import "layout/nosotros";
+@import "layout/cuidados";
+@import "layout/mediaqueries";
 
 
 /*

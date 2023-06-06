@@ -20,26 +20,6 @@ a {
   width: 100%;
 }
 
-/* Media queries*/
-/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
-@media only screen and (max-width: 592px) {
-  .header {
-    width: 100%;
-    height: 104px;
-  }
-}
-@media only screen and (max-width: 389px) {
-  .header {
-    width: 100%;
-    height: 150px;
-  }
-}
-@media only screen and (max-width: 336px) {
-  .header {
-    width: 100%;
-    height: 190px;
-  }
-}
 .header {
   background-color: white;
   padding: 0px;
@@ -112,6 +92,51 @@ footer ul li h2 {
 .contacto ul {
   position: relative;
   bottom: 90px;
+}
+
+.grilla2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
+  gap: 15px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.grilla__hijo2 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(238, 238, 238, 0.9333333333);
+  border: 1px solid #000000;
+}
+.grilla__hijo2 img {
+  width: 100%;
+  height: auto;
+}
+
+.ga {
+  grid-area: area1;
+}
+
+.gb {
+  grid-area: area2;
+}
+
+.gc {
+  grid-area: area3;
+}
+
+.gd {
+  grid-area: area4;
+}
+
+.ge {
+  grid-area: area5;
 }
 
 .lanzamientos,
@@ -208,12 +233,6 @@ footer ul li h2 {
   object-fit: cover;
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: 100%;
-    height: auto;
-  }
-}
 .bodyimagenes {
   padding-top: 3%;
 }
@@ -230,7 +249,6 @@ footer ul li h2 {
 .imagenes-lanzamiento .bodyimagenes img {
   transition: 0.3s;
 }
-
 .imagenes-lanzamiento .bodyimagenes img:hover {
   transform: scale(1.1);
 }
@@ -238,23 +256,20 @@ footer ul li h2 {
 .secciones .bodysecciones img {
   transition: 0.3s;
 }
-
-.secciones .bodysecciones:hover img {
+.secciones .bodysecciones img:hover {
   filter: blur(3px);
 }
 
 .redes .imagenesylogos img {
   transition: filter 0.3s;
 }
-
-.redes .imagenesylogos:hover img {
+.redes .imagenesylogos img:hover img {
   filter: blur(3px);
 }
 
 .extras .extras2 img {
   transition: 0.3s;
 }
-
 .extras .extras2 img:hover {
   filter: blur(3px);
 }
@@ -262,7 +277,6 @@ footer ul li h2 {
 .card-container1 .card img {
   transition: 0.3s;
 }
-
 .card-container1 .card img:hover {
   transform: scale(1.1);
 }
@@ -270,7 +284,6 @@ footer ul li h2 {
 .grilla2 .grilla__hijo2 img {
   transition: 0.3s;
 }
-
 .grilla2 .grilla__hijo2 img:hover {
   transform: scale(1.1);
 }
@@ -357,51 +370,32 @@ footer ul li h2 {
   height: 100%;
 }
 
-.grilla2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
-  gap: 15px;
-  padding: 15px;
-  justify-items: center;
+/* Media queries*/
+/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+@media only screen and (max-width: 592px) {
+  .header {
+    width: 100%;
+    height: 104px;
+  }
 }
-
-.grilla__hijo2 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(238, 238, 238, 0.9333333333);
-  border: 1px solid grey;
+@media only screen and (max-width: 389px) {
+  .header {
+    width: 100%;
+    height: 150px;
+  }
 }
-.grilla__hijo2 img {
-  width: 100%;
-  height: auto;
+@media only screen and (max-width: 336px) {
+  .header {
+    width: 100%;
+    height: 190px;
+  }
 }
-
-.ga {
-  grid-area: area1;
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
 }
-
-.gb {
-  grid-area: area2;
-}
-
-.gc {
-  grid-area: area3;
-}
-
-.gd {
-  grid-area: area4;
-}
-
-.ge {
-  grid-area: area5;
-}
-
 /*
 #carouselExample{
     width: 400px;
