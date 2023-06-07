@@ -2,7 +2,7 @@
     background-color: white;
     padding: 0px;
     width: 100%;
-    height: 52px;
+    height: auto;
     border-bottom: solid 1px black;
     position: fixed;
     z-index: 9999;
@@ -17,18 +17,15 @@
 }
 
 .menu-navegador {
-    display: flex;
-    padding-top: 7px;
-    justify-content: center;
-
+    @include flexbox(row,space-between,center,wrap,10px);
     ul {
         list-style-type: none;
         font-size: 20px;
+        @extend .mp0;
 
         li {
             display: inline-block;
             padding: 7px;
-            padding-left: 25px;
 
             a {
                 text-decoration: none;
@@ -36,6 +33,11 @@
                 font-family: 'Roboto', sans-serif;
                 text-transform: uppercase;
                 /*mayusculas*/
+
+                &:hover{
+                    background-color: #ddd;
+                    font-weight: bold;
+                }
             }
         }
     }

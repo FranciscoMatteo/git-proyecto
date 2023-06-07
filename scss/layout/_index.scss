@@ -19,7 +19,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     text-align: center;
-    padding: 20px;
 
     p {
         margin-top: 17px;
@@ -32,6 +31,7 @@
         margin-top: 17px;
         padding: 2px;
         font-family: 'Roboto', sans-serif;
+        z-index: 1;
     }
 
     img {
@@ -216,4 +216,10 @@
 
 .g4 {
     grid-area: area4;
+}
+
+@for $padding from 1 through 12{
+    .pad-#{$padding} {
+        padding: 2px * $padding;
+    }
 }

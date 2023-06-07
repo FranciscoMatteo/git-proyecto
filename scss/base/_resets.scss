@@ -21,12 +21,5 @@ a {
     img{
     width: 100%;
     }
-    @if $temporada == invierno {
-        display: none;
-    } @else if $temporada == verano {
-        background: $bg-verano;
-        background-size: cover;
-        z-index: 9999;
-    }
 }
 
