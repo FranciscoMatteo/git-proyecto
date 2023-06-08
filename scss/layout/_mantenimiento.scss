@@ -3,8 +3,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-    "area1 area1 area2 area3"
-    "area1 area1 area4 area5"
+        "area1 area1 area2 area3"
+        "area1 area1 area4 area5"
     ;
     gap: 15px;
     padding: 15px;

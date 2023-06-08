@@ -17,7 +17,8 @@
 }
 
 .menu-navegador {
-    @include flexbox(row,space-between,center,wrap,10px);
+    @include flexbox(row, space-between, center, wrap, 10px);
+
     ul {
         list-style-type: none;
         font-size: 20px;
@@ -26,6 +27,7 @@
         li {
             display: inline-block;
             padding: 7px;
+            flex-wrap: wrap;
 
             a {
                 text-decoration: none;
@@ -34,7 +36,7 @@
                 text-transform: uppercase;
                 /*mayusculas*/
 
-                &:hover{
+                &:hover {
                     background-color: #ddd;
                     font-weight: bold;
                 }
@@ -46,6 +48,7 @@
 .imagenes-header {
     display: flex;
     margin-left: auto;
+    flex-wrap: wrap;
 
     img {
         width: 30px;

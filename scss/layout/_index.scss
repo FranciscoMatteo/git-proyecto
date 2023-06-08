@@ -5,7 +5,7 @@
     overflow: hidden;
     position: relative;
 
-    .carousel{
+    .carousel {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -26,22 +26,25 @@
         }
     }
 
-    img{
-        @include imagenes (100%,100%,cover);
+    img {
+        @include imagenes (100%, 100%, cover);
     }
 }
 
 @keyframes slide-fade {
-    0%{
+    0% {
         opacity: 0;
     }
-    8%{
+
+    8% {
         opacity: 1;
     }
-    33%{
+
+    33% {
         opacity: 1;
     }
-    40%{
+
+    40% {
         opacity: 0;
     }
 }
@@ -138,7 +141,7 @@
 }
 
 .card {
-    width: 200px;
+    width: 100px;
     height: auto;
     margin: 10px;
     border-style: none;
@@ -167,6 +170,7 @@
 
 .imagenes-lanzamiento .bodyimagenes img {
     transition: $transition;
+
     &:hover {
         transform: $minizoom;
     }
@@ -174,6 +178,7 @@
 
 .secciones .bodysecciones img {
     transition: $transition;
+
     &:hover {
         filter: $difuminado;
     }
@@ -181,6 +186,7 @@
 
 .redes .imagenesylogos img {
     transition: filter $transition;
+
     &:hover img {
         filter: $difuminado;
     }
@@ -188,6 +194,7 @@
 
 .extras .extras2 img {
     transition: $transition;
+
     &:hover {
         filter: $difuminado;
     }
@@ -195,6 +202,7 @@
 
 .card-container1 .card img {
     transition: $transition;
+
     &:hover {
         transform: $minizoom;
     }
@@ -202,10 +210,12 @@
 
 .grilla2 .grilla__hijo2 img {
     transition: $transition;
+
     &:hover {
         transform: $minizoom;
     }
 }
+
 /*----------------------------------------------------*/
 
 //GRILLA EJEMPLO//
@@ -217,7 +227,7 @@
         "area1 area1 area2 area2"
         "area1 area1 area3 area4"
     ;
-    border: 2px solid red;
+    border: 1px solid rgb(29, 29, 29);
     gap: 15px;
     padding: 15px;
     justify-items: center;
@@ -240,8 +250,6 @@
     align-items: center;
 
     color: #eeee;
-
-    border: 1px solid green;
 
     img {
         width: 100%;
@@ -266,7 +274,7 @@
     grid-area: area4;
 }
 
-@for $padding from 1 through 12{
+@for $padding from 1 through 12 {
     .pad-#{$padding} {
         padding: 2px * $padding;
     }

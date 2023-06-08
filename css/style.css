@@ -59,6 +59,7 @@ a {
 .menu-navegador ul li {
   display: inline-block;
   padding: 7px;
+  flex-wrap: wrap;
 }
 .menu-navegador ul li a {
   text-decoration: none;
@@ -75,6 +76,7 @@ a {
 .imagenes-header {
   display: flex;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 .imagenes-header img {
   width: 30px;
@@ -277,7 +279,7 @@ footer ul li h2 {
 }
 
 .card {
-  width: 200px;
+  width: 100px;
   height: auto;
   margin: 10px;
   border-style: none;
@@ -349,7 +351,7 @@ footer ul li h2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 500px);
   grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area4";
-  border: 2px solid red;
+  border: 1px solid rgb(29, 29, 29);
   gap: 15px;
   padding: 15px;
   justify-items: center;
@@ -364,7 +366,6 @@ footer ul li h2 {
   justify-content: center;
   align-items: center;
   color: rgba(238, 238, 238, 0.9333333333);
-  border: 1px solid green;
 }
 .grilla__hijo img {
   width: 100%;
@@ -481,16 +482,28 @@ footer ul li h2 {
     height: 104px;
   }
 }
-@media only screen and (max-width: 389px) {
+@media only screen and (max-width: 447px) {
   .header {
     width: 100%;
     height: 150px;
   }
 }
-@media only screen and (max-width: 336px) {
+@media only screen and (max-width: 417px) {
   .header {
     width: 100%;
-    height: 190px;
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 251px) {
+  .header {
+    width: 100%;
+    height: 210px;
+  }
+}
+@media only screen and (max-width: 198px) {
+  .header {
+    width: 100%;
+    height: 255px;
   }
 }
 @media (max-width: 600px) {
