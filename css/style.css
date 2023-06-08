@@ -3,10 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
-h1 {
-  color: red;
-}
-
 a {
   text-decoration: none;
 }
@@ -109,49 +105,51 @@ footer ul li h2 {
   bottom: 90px;
 }
 
-.grilla2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "area1 area1 area2 area3" "area1 area1 area4 area5";
-  gap: 15px;
-  padding: 15px;
-  justify-items: center;
-}
-
-.grilla__hijo2 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+.compraitem1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: rgba(238, 238, 238, 0.9333333333);
-  border: 1px solid #000000;
+  flex-wrap: wrap;
 }
-.grilla__hijo2 img {
-  width: 100%;
+
+.image1 img {
+  width: 500px;
   height: auto;
+  flex: 1;
+  transition: 0.3s;
+}
+.image1 img:hover {
+  transform: scale(1.1);
 }
 
-.ga {
-  grid-area: area1;
+.desc1 {
+  margin-left: 30px;
+  flex: 1;
+  max-width: 50%;
 }
 
-.gb {
-  grid-area: area2;
+.compraitem2 {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
 }
 
-.gc {
-  grid-area: area3;
+.image2 img {
+  margin-left: 30%;
+  width: 500px;
+  height: auto;
+  flex: 1;
+  transition: 0.3s;
+}
+.image2 img:hover {
+  transform: scale(1.1);
 }
 
-.gd {
-  grid-area: area4;
-}
-
-.ge {
-  grid-area: area5;
+.desc2 {
+  margin-right: 30px;
+  flex: 1;
+  max-width: 50%;
+  padding-left: 5%;
 }
 
 .fondo {

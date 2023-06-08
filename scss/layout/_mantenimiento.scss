@@ -1,48 +1,51 @@
-.grilla2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "area1 area1 area2 area3"
-        "area1 area1 area4 area5"
-    ;
-    gap: 15px;
-    padding: 15px;
-    justify-items: center;
+.compraitem1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.grilla__hijo2 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #eeee;
-    border: 1px solid $black;
+.image1 img {
+    width: 500px;
+    height: auto;
+    flex: 1;
+    transition: $transition;
 
-    img {
-        width: 100%;
-        height: auto;
+    &:hover {
+        transform: $minizoom;
     }
 }
 
-.ga {
-    grid-area: area1;
+.desc1 {
+    margin-left: 30px;
+    flex: 1;
+    max-width: 50%;
 }
 
-.gb {
-    grid-area: area2;
+
+
+.compraitem2 {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
 }
 
-.gc {
-    grid-area: area3;
+.image2 img {
+    
+    margin-left: 30%;
+    width: 500px;
+    height: auto;
+    flex: 1;
+    transition: $transition;
+
+    &:hover {
+        transform: $minizoom;
+    }
 }
 
-.gd {
-    grid-area: area4;
-}
-
-.ge {
-    grid-area: area5;
+.desc2 {
+    margin-right: 30px;
+    flex: 1;
+    max-width: 50%;
+    padding-left: 5%;
 }
