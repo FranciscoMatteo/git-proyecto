@@ -16,10 +16,6 @@ a {
   padding: 0px;
 }
 
-.fondo img {
-  width: 100%;
-}
-
 .d-flex {
   display: flex;
   flex-direction: row;
@@ -156,6 +152,49 @@ footer ul li h2 {
   grid-area: area5;
 }
 
+.fondo {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.fondo .carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 3%;
+  animation: slide-fade 15s infinite;
+  opacity: 0;
+}
+.fondo .carousel:nth-child(1) {
+  animation-delay: 0s;
+}
+.fondo .carousel:nth-child(2) {
+  animation-delay: 5s;
+}
+.fondo .carousel:nth-child(3) {
+  animation-delay: 10s;
+}
+.fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
 .lanzamientos,
 .ofertas {
   text-align: center;
@@ -218,7 +257,6 @@ footer ul li h2 {
   color: white;
 }
 .bodysecciones img {
-  object-fit: cover;
   width: 100%;
   height: auto;
 }

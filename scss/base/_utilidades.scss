@@ -20,3 +20,9 @@
     padding: $padding
 }
 
+@mixin imagenes ($width,$height,$object) {
+    width: $width;
+    height: $height; 
+    object-fit: $object;
+}
+
