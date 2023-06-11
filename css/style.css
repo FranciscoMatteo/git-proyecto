@@ -1,0 +1,521 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mp0, .menu-navegador ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: white;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px black;
+  position: fixed;
+  z-index: 9999;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  border-radius: 100%;
+  border-bottom-style: none;
+}
+
+.menu-navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.menu-navegador ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+.menu-navegador ul li {
+  display: inline-block;
+  padding: 7px;
+  flex-wrap: wrap;
+}
+.menu-navegador ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  /*mayusculas*/
+}
+.menu-navegador ul li a:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.imagenes-header {
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.imagenes-header img {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  font-family: sans-serif;
+}
+footer ul li h2 {
+  font-family: "Teko", sans-serif;
+}
+
+.ubi {
+  padding-top: 15px;
+}
+
+.menu ul {
+  position: relative;
+  bottom: 65px;
+}
+
+.contacto ul {
+  position: relative;
+  bottom: 90px;
+}
+
+.compraitem1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image1 img {
+  width: 500px;
+  height: auto;
+  flex: 1;
+  transition: 0.3s;
+}
+.image1 img:hover {
+  transform: scale(1.1);
+}
+
+.desc1 {
+  margin-left: 30px;
+  flex: 1;
+  max-width: 50%;
+}
+
+.compraitem2 {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.image2 img {
+  margin-left: 30%;
+  width: 500px;
+  height: auto;
+  flex: 1;
+  transition: 0.3s;
+}
+.image2 img:hover {
+  transform: scale(1.1);
+}
+
+.desc2 {
+  margin-right: 30px;
+  flex: 1;
+  max-width: 50%;
+  padding-left: 5%;
+}
+
+.fondo {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.fondo .carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 3%;
+  animation: slide-fade 15s infinite;
+  opacity: 0;
+}
+.fondo .carousel:nth-child(1) {
+  animation-delay: 0s;
+}
+.fondo .carousel:nth-child(2) {
+  animation-delay: 5s;
+}
+.fondo .carousel:nth-child(3) {
+  animation-delay: 10s;
+}
+.fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.lanzamientos,
+.ofertas {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  padding: 20px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.imagenes-lanzamiento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /*auto-fit ya me hace todos los grids responsive*/
+  gap: 20px;
+}
+
+.bodyimagenes {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+}
+.bodyimagenes p {
+  margin-top: 17px;
+  padding: 2px;
+  font-family: "Konkhmer Sleokchher";
+  font-size: x-large;
+}
+.bodyimagenes h2 {
+  margin-top: 17px;
+  padding: 2px;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+.bodyimagenes img {
+  max-width: 100%;
+}
+
+.secciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.bodysecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*margin: 29px;*/
+  position: relative;
+}
+.bodysecciones p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.bodysecciones img {
+  width: 100%;
+  height: auto;
+}
+
+.buzito {
+  clip-path: inset(32px 0 30px 0);
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: rgb(240, 72, 72);
+}
+
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  border-style: none;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bodyimagenes {
+  padding-top: 3%;
+}
+
+.extras {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  margin: 0px;
+  padding-left: 16px;
+}
+
+/*--------PSEUDOCLASES---------------------------------*/
+.imagenes-lanzamiento .bodyimagenes img {
+  transition: 0.3s;
+}
+.imagenes-lanzamiento .bodyimagenes img:hover {
+  transform: scale(1.1);
+}
+
+.secciones .bodysecciones img {
+  transition: 0.3s;
+}
+.secciones .bodysecciones img:hover {
+  filter: blur(3px);
+}
+
+.redes .imagenesylogos img {
+  transition: filter 0.3s;
+}
+.redes .imagenesylogos img:hover img {
+  filter: blur(3px);
+}
+
+.extras .extras2 img {
+  transition: 0.3s;
+}
+.extras .extras2 img:hover {
+  filter: blur(3px);
+}
+
+.card-container1 .card img {
+  transition: 0.3s;
+}
+.card-container1 .card img:hover {
+  transform: scale(1.1);
+}
+
+.grilla2 .grilla__hijo2 img {
+  transition: 0.3s;
+}
+.grilla2 .grilla__hijo2 img:hover {
+  transform: scale(1.1);
+}
+
+/*----------------------------------------------------*/
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area4";
+  border: 1px solid rgb(29, 29, 29);
+  gap: 15px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.grilla__hijo {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #CC9544;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.grilla__hijo img {
+  width: 100%;
+  height: auto;
+}
+
+.g1 {
+  grid-area: area1;
+}
+
+.g2 {
+  grid-area: area2;
+}
+
+.g3 {
+  grid-area: area3;
+}
+
+.g4 {
+  grid-area: area4;
+}
+
+.pad-1 {
+  padding: 2px;
+}
+
+.pad-2 {
+  padding: 4px;
+}
+
+.pad-3 {
+  padding: 6px;
+}
+
+.pad-4 {
+  padding: 8px;
+}
+
+.pad-5 {
+  padding: 10px;
+}
+
+.pad-6 {
+  padding: 12px;
+}
+
+.pad-7 {
+  padding: 14px;
+}
+
+.pad-8 {
+  padding: 16px;
+}
+
+.pad-9 {
+  padding: 18px;
+}
+
+.pad-10 {
+  padding: 20px;
+}
+
+.pad-11 {
+  padding: 22px;
+}
+
+.pad-12 {
+  padding: 24px;
+}
+
+.extras2 {
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
+}
+.extras2 h2 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.extras2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.extras2 {
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
+}
+.extras2 h2 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.extras2 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries*/
+/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
+@media only screen and (max-width: 592px) {
+  .header {
+    width: 100%;
+    height: 104px;
+  }
+}
+@media only screen and (max-width: 447px) {
+  .header {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 417px) {
+  .header {
+    width: 100%;
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 251px) {
+  .header {
+    width: 100%;
+    height: 210px;
+  }
+}
+@media only screen and (max-width: 198px) {
+  .header {
+    width: 100%;
+    height: 255px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+/*
+#carouselExample{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+*/
+
+/*# sourceMappingURL=style.css.map */

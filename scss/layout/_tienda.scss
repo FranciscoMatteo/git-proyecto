@@ -1,0 +1,40 @@
+.lanzamientos,
+.ofertas {
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.imagenes-lanzamiento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*auto-fit ya me hace todos los grids responsive*/
+    gap: 20px;
+}
+
+.bodyimagenes {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    padding: 20px;
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        margin-top: 17px;
+        padding: 2px;
+        font-family: 'Konkhmer Sleokchher';
+        font-size: x-large;
+    }
+
+
+    h2 {
+        margin-top: 17px;
+        padding: 2px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
