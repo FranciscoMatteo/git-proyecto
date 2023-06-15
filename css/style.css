@@ -300,11 +300,44 @@ footer ul li h2 {
   padding-left: 16px;
 }
 
+.extras2 {
+  display: inline-block;
+  text-align: center;
+  margin: 38px;
+}
+.extras2 h2 {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.extras2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
 /*--------PSEUDOCLASES---------------------------------*/
 .imagenes-lanzamiento .bodyimagenes img {
   transition: 0.3s;
 }
 .imagenes-lanzamiento .bodyimagenes img:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  transition: 0.3s;
+}
+.whatsapp:hover {
   transform: scale(1.1);
 }
 
