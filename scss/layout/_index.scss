@@ -2,12 +2,10 @@
 .fondo {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
 
     .carousel {
         width: 100%;
-        height: 100%;
+        height: 100vh;                                                    
         position: absolute;
         margin-top: 3%;
         animation: slide-fade 15s infinite;
@@ -70,7 +68,6 @@
 .bodyimagenes {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    text-align: center;
 
     p {
         margin-top: 17px;
@@ -104,13 +101,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     /*margin: 29px;*/
     position: relative;
 
     p {
         position: absolute;
-        bottom: 10px;
+        bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
         font-family: 'Teko', sans-serif;
@@ -168,11 +164,11 @@
 
 .extras2 {
     display: inline-block;
-    text-align: center;
     margin: 38px;
 
     h2 {
         position: relative;
+        text-align: center;
         bottom: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -256,43 +252,35 @@
 /*----------------------------------------------------*/
 
 //GRILLA EJEMPLO//
-.grilla {
+.grilla{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 500px);
-    grid-template-areas:
-        "area1 area1 area2 area2"
-        "area1 area1 area3 area4"
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area1 area1 area3 area4"
     ;
-    border: 1px solid rgb(29, 29, 29);
     gap: 15px;
     padding: 15px;
     justify-items: center;
 }
 
 .grilla__hijo {
-
     overflow: hidden;
-
     width: 100%;
-
     height: 100%;
-
     background-color: #CC9544;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     color: #eeee;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+}
 
+.grilla__hijo img {
+
+    width: 100%;
+    height: 100%;
 }
 
 .g1 {

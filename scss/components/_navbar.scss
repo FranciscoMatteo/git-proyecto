@@ -6,17 +6,7 @@
     border-bottom: solid 1px black;
     position: fixed;
     z-index: 9999;
-}
 
-.logo {
-    width: 30px;
-    height: auto;
-    border-radius: 100%;
-    border-bottom-style: none;
-
-}
-
-.menu-navegador {
     @include flexbox(row, space-between, center, wrap, 10px);
 
     ul {
@@ -28,6 +18,7 @@
             display: inline-block;
             padding: 7px;
             flex-wrap: wrap;
+            
 
             a {
                 text-decoration: none;
@@ -45,10 +36,18 @@
     }
 }
 
+
+.logo {
+    width: 30px;
+    height: auto;
+    border-radius: 100%;
+    border-bottom-style: none;
+
+}
+
 .imagenes-header {
     display: flex;
     margin-left: auto;
-    flex-wrap: wrap;
 
     img {
         width: 30px;
