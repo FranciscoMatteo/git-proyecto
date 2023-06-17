@@ -160,6 +160,7 @@ footer ul li h2 {
 }
 
 .fondo {
+  display: flex;
   width: 100%;
   height: 100vh;
 }
@@ -297,6 +298,7 @@ footer ul li h2 {
 
 .extras {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 10px 15px;
   margin: 0px;

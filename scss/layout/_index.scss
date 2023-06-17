@@ -1,5 +1,6 @@
 //CAROUSEL DE FONDO//
 .fondo {
+    display: flex;
     width: 100%;
     height: 100vh;
 
@@ -156,6 +157,7 @@
 //CUIDADOS - NOSOTROS//
 .extras {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px 15px;
     margin: 0px;
