@@ -11,14 +11,19 @@ a {
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-.h1mentiroso {
+.h1 {
     font-size: 30px;
-    padding-top: 5px;
+    margin-top: 50px;
 }
 
 .mapa{
     position: relative;
     right: 17%;
+}
+
+ul{
+    list-style: none;
 }

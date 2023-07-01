@@ -3,12 +3,12 @@
     display: flex;
     width: 100%;
     height: 100vh;
+    padding-top: 3%;
 
     .carousel {
         width: 100%;
         height: 100vh;                                                    
         position: absolute;
-        margin-top: 3%;
         animation: slide-fade 15s infinite;
         opacity: 0;
 
@@ -154,38 +154,6 @@
     padding-top: 3%;
 }
 
-//CUIDADOS - NOSOTROS//
-.extras {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 15px;
-    margin: 0px;
-    padding-left: 16px;
-}
-
-.extras2 {
-    display: inline-block;
-    margin: 38px;
-
-    h2 {
-        position: relative;
-        text-align: center;
-        bottom: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Teko', sans-serif;
-        font-size: 40px;
-        color: white;
-
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -223,14 +191,6 @@
     transition: filter $transition;
 
     &:hover img {
-        filter: $difuminado;
-    }
-}
-
-.extras .extras2 img {
-    transition: $transition;
-
-    &:hover {
         filter: $difuminado;
     }
 }

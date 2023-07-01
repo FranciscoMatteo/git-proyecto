@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link favicon-->
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
-    <!--Css-->
+    <!--Link al archivo css-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Primary Meta Tags -->
     <title>Shibuya - Tienda oficial</title>
@@ -39,13 +39,23 @@
 </head>
 
 <body>
+    <header class="navbar"> 
+        <div class="logo-container logo-nav-container">
+            <a href="index.html"><img src="imagenes/logorojo.png" class="logo2" alt="logo"></a>
+            <nav class="navigation">
+                <ul class="">
+                    <li> <a href="index.html"> Inicio</a> </li>
+                    <li> <a href="#ofertas">Descuentos</a> </li>
+                    <li> <a href="pages/tienda.html"> Tienda</a> </li>
+                    <li> <a href="pages/tienda.html"> Ayuda</a> </li>
+                    <li> <a href="pages/nosotros.html"> Nosotros</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <header>
 
-        <section class="header">
-
-
-
+        <!-- <div class="header">
             <a href="index.html">
                 <img src="imagenes/logorojo.png" class="logo" alt="logo">
             </a>
@@ -61,15 +71,11 @@
 
             <div class="imagenes-header">
 
-
                 <img src="imagenes/carrito.png" class="carrito" alt="carrito">
                 <img src="imagenes/perfil.png" class="perfil" alt="perfil">
 
             </div>
-
-
-
-        </section>
+    </div> -->
 
     </header>
 
@@ -93,7 +99,7 @@
 
         <!-------------------------------------------lanzamientos------------------------------------------------------------------------->
 
-        <h1 class="lanzamientos h1mentiroso" data-aos="fade-up"> Lanzamientos </h1>
+        <h1 class="lanzamientos h1" data-aos="fade-up"> Lanzamientos </h1>
 
 
         <section class="imagenes-lanzamiento " data-aos="fade-up">
@@ -203,30 +209,6 @@
             </article>
         </section>
 
-
-        <!--------------------------------------------agregados---------------------------------------------------------------------------------->
-
-        <section id="ayuda" class="extras" data-aos="fade-up">
-
-            <article class="extras2">
-
-                <a href="pages/nosotros.html">
-                    <img src="imagenes/Aboutus.jpg" alt="nosotros">
-                    <h2>NOSOTROS</h2>
-                </a>
-
-            </article>
-
-            <article class="extras2">
-
-                <a href="pages/cuidados.html">
-                    <img src="imagenes/cuidados.jpg" alt="cuidados">
-                    <h2>CUIDADOS</h2>
-                </a>
-
-            </article>
-
-        </section>
     </main>
 
     <!----------------------------------------------Footer--------------------------------------------------------------------------------------->

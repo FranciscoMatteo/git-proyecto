@@ -1,29 +1,46 @@
-/* Media queries*/
-/*haciendo responsive el menu navegador a tamaños muy pequeños (utlizando F12)*/
-@media only screen and (max-width: 592px) {
+@media only screen and (max-width: 568px) {
 
-    .header {
-        width: 100%;
-        height: 104px;
+    .navigation {
+        ul{
+            li {
+                a {
+                    font-size: 75%;
+                }
+            }
+        }
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 447px) {
+@media only screen and (max-width: 415px) {
 
-    .header {
-        width: 100%;
-        height: 150px;
+    .navigation {
+        ul{
+            li {
+                a {
+                    font-size: 68%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
     }
 }
 
-
-@media only screen and (max-width: 417px) {
-
-    .header {
-        width: 100%;
-        height: 170px;
-    }
-}
 
 
 @media (max-width: 600px) {
