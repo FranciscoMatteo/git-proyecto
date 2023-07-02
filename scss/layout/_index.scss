@@ -48,6 +48,54 @@
     }
 }
 
+.contenedor {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    flex-wrap: wrap;
+}
+
+.contenedor-seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-seccion .carta {
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    transition: $transition;
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-2%);
+    }
+    
+    img {
+        width: 350px;
+        height: auto;
+    }
+
+    h2 {
+        margin: 15px 0px;
+        font-size: 28px;
+        color: rgb(64, 64, 64);
+        font-family: 'Konkhmer Sleokchher';
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0px 10px;
+        margin-bottom: 5px;
+        font-family: "Roboto"
+    }
+}
 
 //LANZAMIENTOS//
 .lanzamientos,
@@ -57,36 +105,6 @@
     padding: 20px;
     text-transform: uppercase;
     padding-top: 50px;
-}
-
-.imagenes-lanzamiento {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /*auto-fit ya me hace todos los grids responsive*/
-    gap: 20px;
-}
-
-.bodyimagenes {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-
-    p {
-        margin-top: 17px;
-        padding: 2px;
-        font-family: 'Konkhmer Sleokchher';
-        font-size: x-large;
-    }
-
-    h2 {
-        margin-top: 17px;
-        padding: 2px;
-        font-family: 'Roboto', sans-serif;
-        z-index: 1;
-    }
-
-    img {
-        max-width: 100%;
-    }
 }
 
 //SECCIONES//
@@ -130,30 +148,6 @@
     color: rgb(240, 72, 72);
 }
 
-//OFERTAS//
-.card-container1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    width: 100px;
-    height: auto;
-    margin: 10px;
-    border-style: none;
-
-    img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-.bodyimagenes {
-    padding-top: 3%;
-}
-
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -162,14 +156,6 @@
 }
 
 /*--------PSEUDOCLASES---------------------------------*/
-
-.imagenes-lanzamiento .bodyimagenes img {
-    transition: $transition;
-
-    &:hover {
-        transform: $minizoom;
-    }
-}
 
 .whatsapp {
     transition: $transition;
@@ -187,19 +173,11 @@
     }
 }
 
-.redes .imagenesylogos img {
+.imagenesylogos img {
     transition: filter $transition;
 
     &:hover img {
         filter: $difuminado;
-    }
-}
-
-.card-container1 .card img {
-    transition: $transition;
-
-    &:hover {
-        transform: $minizoom;
     }
 }
 
