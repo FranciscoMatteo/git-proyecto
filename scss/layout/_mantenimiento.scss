@@ -1,0 +1,7 @@
+.zoom {
+    transition: $transition;
+
+        &:hover {
+        transform: $minizoom;
+    }
+}

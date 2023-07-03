@@ -1,0 +1,246 @@
+//CAROUSEL DE FONDO//
+.fondo {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3%;
+
+    .carousel {
+        width: 100%;
+        height: 100vh;                                                    
+        position: absolute;
+        animation: slide-fade 15s infinite;
+        opacity: 0;
+
+        &:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 10s;
+        }
+    }
+
+    img {
+        @include imagenes (100%, 100%, cover);
+    }
+}
+
+@keyframes slide-fade {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    flex-wrap: wrap;
+}
+
+.contenedor-seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-seccion .carta {
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    transition: $transition;
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-2%);
+    }
+    
+    img {
+        width: 350px;
+        height: auto;
+    }
+
+    h2 {
+        margin: 15px 0px;
+        font-size: 28px;
+        color: rgb(64, 64, 64);
+        font-family: 'Konkhmer Sleokchher';
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0px 10px;
+        margin-bottom: 5px;
+        font-family: "Roboto"
+    }
+}
+
+//LANZAMIENTOS//
+.lanzamientos,
+.ofertas {
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+//SECCIONES//
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.bodysecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin: 29px;*/
+    position: relative;
+
+    p {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Teko', sans-serif;
+        font-size: 40px;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.buzito {
+    clip-path: inset(32px 0 30px 0);
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: rgb(240, 72, 72);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/*--------PSEUDOCLASES---------------------------------*/
+
+.whatsapp {
+    transition: $transition;
+
+    &:hover {
+        transform: $minizoom;
+    }
+}
+
+.secciones .bodysecciones img {
+    transition: $transition;
+
+    &:hover {
+        filter: $difuminado;
+    }
+}
+
+.imagenesylogos img {
+    transition: filter $transition;
+
+    &:hover img {
+        filter: $difuminado;
+    }
+}
+
+.grilla2 .grilla__hijo2 img {
+    transition: $transition;
+
+    &:hover {
+        transform: $minizoom;
+    }
+}
+
+/*----------------------------------------------------*/
+
+//GRILLA EJEMPLO//
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area1 area1 area3 area4"
+    ;
+    gap: 15px;
+    padding: 15px;
+    justify-items: center;
+}
+
+.grilla__hijo {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #CC9544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeee;
+
+}
+
+.grilla__hijo img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.g1 {
+    grid-area: area1;
+}
+
+.g2 {
+    grid-area: area2;
+}
+
+.g3 {
+    grid-area: area3;
+}
+
+.g4 {
+    grid-area: area4;
+}
+
+@for $padding from 1 through 12 {
+    .pad-#{$padding} {
+        padding: 2px * $padding;
+    }
+}

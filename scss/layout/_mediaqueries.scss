@@ -1,0 +1,97 @@
+@media only screen and (max-width: 568px) {
+
+    .navigation {
+        ul{
+            li {
+                a {
+                    font-size: 75%;
+                }
+            }
+        }
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    .navigation {
+        ul{
+            li {
+                a {
+                    font-size: 68%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+}
+
+/*GRID*/
+@media (max-width: 1200px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas:
+            "area1 area1"
+            "area2 area2"
+            "area3 area3"
+            "area4 area4"
+        ;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 250px);
+        grid-template-areas:
+            "area1 area1"
+            "area2 area2"
+            "area3 area3"
+            "area4 area4"
+        ;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .grilla {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 125px);
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+        ;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
